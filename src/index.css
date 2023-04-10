@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+* {
+  font-family: "Nunito", sans-serif;
+}
+
+body {
+  background-color: #E3DFFD;
+}
+
+.pageTitle {
+  text-align: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.container .survey {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  max-width: 800px;
+  min-height: 400px;
+  padding: 50px;
+  background-color: #E5D1FA;
+  margin: auto;
+  box-shadow: 9px 14px 44px -14px rgba(0, 0, 0, 0.75);
+}
+.container .survey button {
+  margin-top: 30px;
+  align-self: flex-end;
+  border-radius: 10px;
+  background-color: lightblue;
+  width: 100px;
+  height: 40px;
+}
+.container .survey .question {
+  min-height: 200px;
+  background-color: #ECF2FF;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  padding: 20px;
+}
+.container .survey .choices {
+  display: flex;
+  justify-content: space-around;
+}
+.container .survey .choices img {
+  max-width: 250px;
+  -webkit-clip-path: circle();
+          clip-path: circle();
+  background-color: #FFF4D2;
+}
+.container .survey .choices .selected {
+  background-color: #E8A0BF;
+  animation: pulse 1s infinite;
+}
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.modalButton {
+  position: relative;
+  left: 75%;
+  margin-top: 30px;
+  align-self: flex-end;
+  border-radius: 10px;
+  background-color: lightblue;
+  width: 100px;
+  height: 40px;
+}/*# sourceMappingURL=index.css.map */
